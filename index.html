@@ -10,52 +10,7 @@
 </head>
 <body>
 
-<h1>Create a New Video Session</h1><br>
-	
-	<form>
-		<label>Session Type</label>
-		<select name="sessionType" id="sessionType">
-			<option value="">- - - - -</option>
-			<option value="medconsult">Medical Consultation</option>
-			<option value="internalchat">Agent to Agent Discussion</option>
-		</select><br>
 
-		<label>Session ID</label>
-		<button type="button" onclick="document.getElementById('randomAlias').value = getRndInteger(1001,999999)">Generate ID</button> 
-		<input type="text" id="randomAlias" name="randomAlias" maxlength="7" value="-" class="medOption" required>
-<br>
-	<div class="inv" id="medconsult">
-		<label>Patient Last Name</label>
-		<input type="text" id="patientLname" name="patientLname" maxlength="90" class="medOption" value="-" required><br>
-
-		<label>Patient ID</label>
-		<input type="text" id="patientID" name="patientID" maxlength="90" class="medOption" value="-" required><br>
-       <!-- <button type="button" onclick="document.write('showInput')innerHTML">Create Links</button> -->
-
-	</div>
-	<div class="inv" id="internalchat">
-		<label>Agent ID</label>
-		<input type="text" id="agentID" maxlength="90"><br>
-
-		<label>Host PIN </label>
-			<button type="button" onclick="document.getElementById('rndmhostpin').value = getRndInteger(1000,99999)">Create Host PIN</button> 
-		<input type="text" id="rndmhostpin" maxlength="5" value=""><br>
-		<!-- <button type="button" onclick="document.write('URLreturn')">Submit</button> -->
-	</div>
-
-	</form><br>
-
-   <!--  <div id="formResult">
-    
-
-        <p>Patient Link (direct link)</p><a href="https://xmb-hc.pex-gcc.com/webapp/home" target="_blank">https://xmb-hc.pex-gcc.com/webapp/home</a>
-
-        <p>Provider Info (Join Through Genesys)</p><br>
-        <span id="providerInfo"></span>
-
-    </div> -->
-
-    <button id="submit" type="submit" onclick="return results();">Generate Session Info Now</button>
 
 
 
@@ -114,6 +69,53 @@
     
   </div>
 </div>
+
+<h1>Create a New Video Session</h1><br>
+	
+	<form>
+		<label>Session Type</label>
+		<select name="sessionType" id="sessionType">
+			<option value="">- - - - -</option>
+			<option value="medconsult">Medical Consultation</option>
+			<option value="internalchat">Agent to Agent Discussion</option>
+		</select><br>
+
+		<label>Session ID</label>
+		<button type="button" onclick="document.getElementById('randomAlias').value = getRndInteger(1001,999999)">Generate ID</button> 
+		<input type="text" id="randomAlias" name="randomAlias" maxlength="7" value="-" class="medOption" required>
+<br>
+	<div class="inv" id="medconsult">
+		<label>Patient Last Name</label>
+		<input type="text" id="patientLname" name="patientLname" maxlength="90" class="medOption" value="-" required><br>
+
+		<label>Patient ID</label>
+		<input type="text" id="patientID" name="patientID" maxlength="90" class="medOption" value="-" required><br>
+       <!-- <button type="button" onclick="document.write('showInput')innerHTML">Create Links</button> -->
+
+	</div>
+	<div class="inv" id="internalchat">
+		<label>Agent ID</label>
+		<input type="text" id="agentID" maxlength="90"><br>
+
+		<label>Host PIN </label>
+			<button type="button" onclick="document.getElementById('rndmhostpin').value = getRndInteger(1000,99999)">Create Host PIN</button> 
+		<input type="text" id="rndmhostpin" maxlength="5" value=""><br>
+		<!-- <button type="button" onclick="document.write('URLreturn')">Submit</button> -->
+	</div>
+
+	</form><br>
+
+   <!--  <div id="formResult">
+    
+
+        <p>Patient Link (direct link)</p><a href="https://xmb-hc.pex-gcc.com/webapp/home" target="_blank">https://xmb-hc.pex-gcc.com/webapp/home</a>
+
+        <p>Provider Info (Join Through Genesys)</p><br>
+        <span id="providerInfo"></span>
+
+    </div> -->
+
+    <button id="submit" type="submit" onclick="return results();">Generate Session Info Now</button>
 
 <!-- Inline JS -->
 
