@@ -4,7 +4,7 @@
 <title>Simple JS Form</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-<script type="text/javascript" src="scripts/formStuff.js"></script>
+<!-- <script type="text/javascript" src="scripts/formStuff.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
@@ -169,9 +169,67 @@ function results(){
 
 </script>
 
+<script type="text/javascript">
 
+$('.subscribtion').click(function(){
+  
+  if($(this).hasClass('active')) {
+    
+    $(this).removeClass('active');
+    $('.form').removeClass('active');
+    
+    if($(this).hasClass('free')) {
+      $('.family').removeClass('hidden');
+      $('.premium').removeClass('hidden');
+      $('.free-form').removeClass('hidden');
+      $('.free-button').removeClass('active');
+    }
+    if($(this).hasClass('family')) {
+      $('.free').removeClass('hidden');
+      $('.premium').removeClass('hidden');
+    }
+    if($(this).hasClass('premium')) {
+      $('.free').removeClass('hidden');
+      $('.family').removeClass('hidden');
+    }
+    
+  }
+  else {
+    $(this).addClass('active');
+    
+    if($(this).hasClass('free')) {
+      $('.family').addClass('hidden');
+      $('.premium').addClass('hidden');
+      $('.free-form').addClass('hidden');
+      $('.free-button').addClass('active');
+    }
+    if($(this).hasClass('family')) {
+      $('.free').addClass('hidden');
+      $('.premium').addClass('hidden');
+    }
+    if($(this).hasClass('premium')) {
+      $('.free').addClass('hidden');
+      $('.family').addClass('hidden');
+    }
+    
+    $('.form').addClass('active');
+  }
+  
+});
 
+$('.payment-btn').click(function(){
+  
+  if( $(this).hasClass('active') ) {
+    $(this).removeClass('active');
+  }
+  else {
+    $('.payment-btn').removeClass('active');
+    $(this).addClass('active');
+  }
+  
+})
 
+</script>
 
 </body>
 </html>
