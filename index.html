@@ -17,7 +17,7 @@
     <div class="container">
         <form>
             <h1>
-                Create a New Video Consultation
+                Create a New Video Session
             </h1>
             <div>
                 <div>
@@ -37,29 +37,27 @@
                 	<br>
             </div>
             
-        <div class="">
-            <div class="street">
-                <label for="name">Street</label>
-                <input type="text" name="address">
+        <div class="inv" id="medconsult">
+        	<h3>
+                Instant Medical Consult
+            </h3>
+            <div>
+                <label>Patient Last Name</label>
+				<input type="text" id="patientLname" name="patientLname" maxlength="90" class="medOption" value="-" required>
             </div>
-            <div class="address-info">
+            <div>
                 <div>
-                    <label for="city">City</label>
-                    <input type="text" name="city">
+                   <label>Patient ID</label>
+					<input type="text" id="patientID" name="patientID" maxlength="90" class="medOption" value="-" required><br>
                 </div>
-                <div>
-                    <label for="state">State</label>
-                    <input type="text" name="state">
-                </div>
-                <div>
-                    <label for="zip">Zip</label>
-                    <input type="text" name="zip">
-                </div>
+            </div>
+             <div class="btns">
+                <button id="submit" type="submit" onclick="return results();">Generate Session Info Now</button>
             </div>
         </div>
-            <h1>
-                <i class="far fa-credit-card"></i> Payment Information
-            </h1>
+            <h3>
+                Future Medical Consultation
+            </h3>
             <div class="cc-num">
                 <label for="card-num">Credit Card No.</label>
                 <input type="text" name="card-num">
@@ -74,9 +72,7 @@
                     <input type="text" name="security">
                 </div>
             </div>
-            <div class="btns">
-                <button id="submit" type="submit" onclick="return results();">Generate Session Info Now</button>
-            </div>
+           
         </form>
     </div>
 </div>
