@@ -55,8 +55,9 @@
                 <button id="submit" type="submit" onclick="return results();">Generate Session Info Now</button>
             </div>
         </div>
+        <div class="inv" id="internalchat">
             <h3>
-                Future Medical Consultation
+                Instant Agent to Agent Conversation
             </h3>
             <div class="cc-num">
                 <label for="card-num">Credit Card No.</label>
@@ -72,6 +73,7 @@
                     <input type="text" name="security">
                 </div>
             </div>
+           </div>
            
         </form>
     </div>
@@ -160,6 +162,28 @@ function getRndInteger(min, max) {
                         target.className = 'vis';
                     }
             });
+
+
+window.onload = function() {
+  document
+  .getElementById('sessionType')
+  .addEventListener('change', function() {
+    'use strict';
+    var vis = document.querySelector('.vis'),
+        target = document.getElementById(this.value);
+    if (vis !== null) {
+      vis.className = 'inv';
+    }
+    if (target !== null) {
+      target.className = 'vis';
+    }
+  });
+  
+  // send change event to element to select the first div...
+  var event = new Event('change');
+   document.getElementById('sessionType').dispatchEvent(event);
+}
+
 </script>
 
 <!-- Return Join Information for Patient and Provider Based on Input -->
