@@ -30,7 +30,7 @@
                 	<br>
                 <div>
                   <label>Session ID</label>
-					<button class="btns" type="button" onclick="document.getElementById('randomAlias').value = getRndInteger(1001,999999)">Generate ID</button> 
+					<button class="actionbuttons" type="button" onclick="document.getElementById('randomAlias').value = getRndInteger(1001,999999)">Generate ID</button> 
 					<input type="text" id="randomAlias" name="randomAlias" maxlength="7" value="-" class="medOption" required>
                 </div>
                 	<br>
@@ -50,8 +50,8 @@
 					<input type="text" id="patientID" name="patientID" maxlength="90" class="medOption" value="-" required><br>
                 </div>
             </div>
-             <div ><br>
-                <button id="submit" type="submit" class="actionbuttons" onclick="return results();">Generate Session Info Now</button>
+             <div class="btns"><br>
+                <button id="submit" type="submit" onclick="return results();">Generate Session Info Now</button>
             </div>
         </div>
         <div class="inv" id="internalchat">
