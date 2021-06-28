@@ -6,6 +6,8 @@ $marinegray: #256c94;
 $oceanfog: #64afc5;
 $seafoam: #9ccfbf;
 $darkblue: #20416d;
+$buttonpurple: #4a3b76;
+$buttonlightpurple: #cfc9e1;
 $title: #493b76;
 
 body {
@@ -136,8 +138,8 @@ form {
         margin: 3px 0;
         height: 30px;
         width: 40%;
-        color: #cfc9e1;
-        background-color: #4a3b76;
+        color: #buttonlightpurple;
+        background-color: $buttonpurple;
         text-transform: uppercase;
         border: 0;
         border-radius: .3rem;
@@ -151,10 +153,28 @@ form {
     }
 }
 
+.actionbuttons {
+        margin: 3px 0;
+        height: 30px;
+        width: 40%;
+        color: #buttonlightpurple;
+        background-color: $buttonpurple;
+        text-transform: uppercase;
+        border: 0;
+        border-radius: .3rem;
+        letter-spacing: 2px;
+
+        &:hover {
+            animation-name: btn-hov;
+            animation-duration: 550ms;
+            animation-fill-mode: forwards;
+        }
+    }
+
 @keyframes btn-hov {
     100% {
-        background-color: #cfc9e1;
-        color: #4a3b76;
+        background-color: #buttonlightpurple;
+        color: $buttonpurple;
         transform: scale(1.05)
     }
 }

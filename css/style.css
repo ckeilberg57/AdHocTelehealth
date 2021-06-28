@@ -115,7 +115,7 @@ form h1:nth-of-type(2) {
   margin: 3px 0;
   height: 30px;
   width: 40%;
-  color: #cfc9e1;
+  color: #buttonlightpurple;
   background-color: #4a3b76;
   text-transform: uppercase;
   border: 0;
@@ -128,9 +128,26 @@ form h1:nth-of-type(2) {
   animation-fill-mode: forwards;
 }
 
+.actionbuttons {
+  margin: 3px 0;
+  height: 30px;
+  width: 40%;
+  color: #buttonlightpurple;
+  background-color: #4a3b76;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: .3rem;
+  letter-spacing: 2px;
+}
+.actionbuttons:hover {
+  animation-name: btn-hov;
+  animation-duration: 550ms;
+  animation-fill-mode: forwards;
+}
+
 @keyframes btn-hov {
   100% {
-    background-color: #cfc9e1;
+    background-color: #buttonlightpurple;
     color: #4a3b76;
     transform: scale(1.05);
   }
