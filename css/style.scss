@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo');
 $coral: #eb9478;
 $maroon: #8e2807;
+$lightblue: #81b4cc;
+$marinegray: #256c94;
+$oceanfog: #64afc5;
+$seafoam: #9ccfbf;
+$darkblue: #20416d;
 $title: #493b76;
 
 body {
@@ -14,7 +19,7 @@ body {
     display: flex;
     justify-content: center;
     font-family: "Arimo";
-    background-color: $coral;
+    background-color: $lightblue;
     -webkit-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
     -moz-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
     box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
@@ -59,7 +64,7 @@ form {
         letter-spacing: .15rem;
         font-family: "Arimo";
         margin-top: 5px;
-        color: $maroon;
+        color: $darkblue;
         border-radius: 4px;
     }
 
@@ -67,7 +72,7 @@ form {
         text-transform: uppercase;
         font-size: 12px;
         letter-spacing: 2px;
-        color: $maroon;
+        color: $darkblue;
     }
 
     h1 {
