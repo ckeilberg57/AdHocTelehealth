@@ -17,24 +17,27 @@
     <div class="container">
         <form>
             <h1>
-                <i class="fas fa-shipping-fast"></i>
                 Create a New Video Consultation
             </h1>
-            <div class="name">
+            <div>
                 <div>
                     <label>Session Type</label>
 					<select name="sessionType" id="sessionType">
 						<option value="">- - - - -</option>
 						<option value="medconsult">Medical Consultation</option>
 						<option value="internalchat">Agent to Agent Discussion</option>
-					</select><br>
+					</select>
                 </div>
+                	<br>
                 <div>
                   <label>Session ID</label>
 					<button type="button" onclick="document.getElementById('randomAlias').value = getRndInteger(1001,999999)">Generate ID</button> 
-					<input type="text" id="randomAlias" name="randomAlias" maxlength="7" value="-" class="medOption" required><br>
+					<input type="text" id="randomAlias" name="randomAlias" maxlength="7" value="-" class="medOption" required>
                 </div>
+                	<br>
             </div>
+            
+        <div class="">
             <div class="street">
                 <label for="name">Street</label>
                 <input type="text" name="address">
@@ -53,6 +56,7 @@
                     <input type="text" name="zip">
                 </div>
             </div>
+        </div>
             <h1>
                 <i class="far fa-credit-card"></i> Payment Information
             </h1>
@@ -71,8 +75,7 @@
                 </div>
             </div>
             <div class="btns">
-                <button>Purchase</button>
-                <button>Back to cart</button>
+                <button id="submit" type="submit" onclick="return results();">Generate Session Info Now</button>
             </div>
         </form>
     </div>
@@ -80,9 +83,9 @@
 
 <br><br>
 
- <h1>Create a New Video Session</h1><br>
+<!-- <h1>Create a New Video Session</h1><br>
 	
-	<form>
+	 <form>
 		<label>Session Type</label>
 		<select name="sessionType" id="sessionType">
 			<option value="">- - - - -</option>
@@ -111,9 +114,9 @@
 			<button type="button" onclick="document.getElementById('rndmhostpin').value = getRndInteger(1000,99999)">Create Host PIN</button> 
 		<input type="text" id="rndmhostpin" maxlength="5" value=""><br>
 	
-	</div>
+	</div> 
 
-	</form><br> 
+	</form><br> -->
 
 <!--     <div id="formResult">
     
@@ -125,7 +128,7 @@
 
     </div>  -->
 
-    <button id="submit" type="submit" onclick="return results();">Generate Session Info Now</button>
+   <!--  <button id="submit" type="submit" onclick="return results();">Generate Session Info Now</button> -->
 
 <!-- Inline JS -->
 
