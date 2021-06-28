@@ -18,16 +18,21 @@
         <form>
             <h1>
                 <i class="fas fa-shipping-fast"></i>
-                Shipping Details
+                Create a New Video Consultation
             </h1>
             <div class="name">
                 <div>
-                    <label for="f-name">First</label>
-                    <input type="text" name="f-name">
+                    <label>Session Type</label>
+					<select name="sessionType" id="sessionType">
+						<option value="">- - - - -</option>
+						<option value="medconsult">Medical Consultation</option>
+						<option value="internalchat">Agent to Agent Discussion</option>
+					</select><br>
                 </div>
                 <div>
-                    <label for="l-name">Last</label>
-                    <input type="text" name="l-name">
+                  <label>Session ID</label>
+					<button type="button" onclick="document.getElementById('randomAlias').value = getRndInteger(1001,999999)">Generate ID</button> 
+					<input type="text" id="randomAlias" name="randomAlias" maxlength="7" value="-" class="medOption" required><br>
                 </div>
             </div>
             <div class="street">
