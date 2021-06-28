@@ -3,7 +3,6 @@
 <head>
 <title>Create a Session</title>
 <link rel="stylesheet" type="text/css" href="./css/style.css">
-<!-- <script type="text/javascript" src="scripts/formStuff.js"></script> -->
 </head>
 <body>
 
@@ -196,9 +195,11 @@ function results(){
     var patientLname = document.getElementById('patientLname').value;
     var patientID = document.getElementById('patientID').value;
 
+    document.write('<html><head><title>Create a Session</title><link rel="stylesheet" type="text/css" href="./css/style.css"></head><body>')
     document.write('<div class="wrapper"><div class="container"><h1>You Just Created a Rapid Consultation</h1>');
     document.write('<p>Patient Link (direct link)</p><a href="https://xmb-hc.pex-gcc.com/webapp/#/?conference=hcp' + randomAlias +'&name=' + patientLname + '%20' + patientID + '&pin=2021&callType=video" target="_blank">https://xmb-hc.pex-gcc.com/webapp/#/?conference=hcp' + randomAlias +'&name=' + patientLname + '%20' + patientID + '&pin=2021&callType=video</a><br>')
     document.write('<p>Provider Connect Info <br> <a href="https://kforney1205.github.io/pexRTCdemo/index.html" target="blank">https://kforney1205.github.io/pexRTCdemo/index.html</a><br><b>Session ID</b> mp' + randomAlias + '<br><b>Provider PIN:</b> 2021</p></div></div>')
+    document.write('</body></html>')
 
 }
 
