@@ -58,19 +58,14 @@
             <h2>
                 Instant Agent to Agent Conversation
             </h2>
+             <div class="lineitem">
+                   <label>Agent ID</label>
+					<input type="text" id="agentID" name="agentID" maxlength="90" class="agent2agent" value="-" placeholder="Guest Agent ID" required><br>
+                </div>
             <div class="lineitem">
-                <label for="card-num">Credit Card No.</label>
-                <input type="text" name="card-num">
+                 <div class="btns"><br>
+                <button id="submit" type="button" onclick="agent2agent();">Create Agent to Agent Room</button>
             </div>
-            <div class="lineitem">
-                <div>
-                    <label for="card-num">Exp</label>
-                    <input type="text" name="expire">
-                </div>
-                <div class="lineitem">
-                    <label for="card-num">CCV</label>
-                    <input type="text" name="security">
-                </div>
             </div>
            </div>
            
@@ -196,9 +191,29 @@ function results(){
     var patientID = document.getElementById('patientID').value;
 
     document.write('<html><head><title>Share Your Video Session</title><link rel="stylesheet" type="text/css" href="./css/style.css"></head><body>')
-    document.write('<div class="wrapper"><div class="container"><h1>You Just Created a Rapid Consultation</h1>');
+    document.write('<div class="wrapper"><div class="container"><h1>You Just Created a Rapid Consultation</h1>')
     document.write('<div class="resultscontent"><h3>Patient Link (direct link)</h3><a class="resultlink" href="https://xmb-hc.pex-gcc.com/webapp/#/?conference=hcp' + randomAlias +'&name=' + patientLname + '%20' + patientID + '&pin=2021&callType=video" target="_blank">https://xmb-hc.pex-gcc.com/webapp/#/?conference=hcp' + randomAlias +'&name=' + patientLname + '%20' + patientID + '&pin=2021&callType=video</a><br></div><br><br>')
-    document.write('<div class="resultscontent"><h3>Provider Connect Info</h3><p><a class="resultlink" href="https://kforney1205.github.io/pexRTCdemo/index.html" target="blank">https://kforney1205.github.io/pexRTCdemo/index.html</a><br><b>Session ID</b> mp' + randomAlias + '<br><b>Provider PIN:</b> 2021</p></div></div></div>')
+    document.write('<div class="resultscontent"><h3>Provider Connect Info</h3><p><a class="resultlink" href="https://kforney1205.github.io/pexRTCdemo/index.html" target="blank">https://kforney1205.github.io/pexRTCdemo/index.html</a><br><b>Session ID: </b> mp' + randomAlias + '<br><b>Provider PIN:</b> 2021</p></div></div></div>')
+    document.write('</body></html>')
+
+}
+
+</script>
+
+
+<!-- Return Join Information for Ad-Hoc Agent Session -->
+
+<script type="text/javascript">
+    
+function agent2agent(){
+    var sessionType = document.getElementById('sessionType').value;
+    var randomAlias = document.getElementById('randomAlias').value;
+    var agentID = document.getElementById('agentID').value;
+
+    document.write('<html><head><title>Share Your Video Session</title><link rel="stylesheet" type="text/css" href="./css/style.css"></head><body>')
+    document.write('<div class="wrapper"><div class="container"><h1>Rapid Agent to Agent Room is Created!</h1>')
+    document.write('<div class="resultscontent"><h3>Agent Direct Link (Text Message)</h3><a class="resultlink" href="https://xmb-hc.pex-gcc.com/webapp/#/?conference=hcp' + randomAlias + '&name=' + agentID + '&pin=2021&callType=video" target="_blank">https://xmb-hc.pex-gcc.com/webapp/#/?conference=hcp' + randomAlias + '&name=' + agentID +'&pin=2021&callType=video</a><br></div><br><br>')
+    document.write('<div class="resultscontent"><h3>Agent Connect Info </h3><p><a class="resultlink" href="https://kforney1205.github.io/pexRTCdemo/index.html" target="blank">https://kforney1205.github.io/pexRTCdemo/index.html</a><br><b>Session ID: </b> mp' + randomAlias + '<br><b>Guest Agent PIN:</b> 2021<br><b>Host Agent PIN:</b>2021</p></div></div></div>')
     document.write('</body></html>')
 
 }
