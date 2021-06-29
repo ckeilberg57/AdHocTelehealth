@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 $coral: #eb9478;
 $maroon: #8e2807;
 $lightblue: #81b4cc;
@@ -53,27 +54,28 @@ body {
 h1 {
     align-self: center;
     font-size: 32px;
+    font-family: "Ubuntu";
     color: $buttonpurple;
 }
 
 h2
 {
 color: $marinegray;
-font-family: "Arimo";
+font-family: "Ubuntu";
 
 }
 
 h3
 {
 color: $darkblue;
-font-family: "Arimo";
+font-family: "Ubuntu";
 
 }
 
 p 
 {
 color: #333333;
-font-family:  #Arimo;
+font-family:  "Arimo";
 }
 
 
@@ -101,7 +103,7 @@ form {
         min-height: 25px;
         border: 0;
         font-size: 1rem;
-        letter-spacing: .15rem;
+        letter-spacing: .10rem;
         font-family: "Arimo";
         margin-top: 5px;
         color: $darkblue;
