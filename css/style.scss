@@ -49,7 +49,31 @@ body {
 
 h1 {
     align-self: center;
+    font-size: 32px;
+    color: $buttonpurple;
 }
+
+h2
+{
+color: $marinegray;
+font-family: "Arimo";
+
+}
+
+h3
+{
+color: $darkblue;
+font-family: "Arimo";
+
+}
+
+p 
+{
+color: #333333;
+font-family:  #Arimo;
+}
+
+
 
 form {
     width: 100%;
@@ -90,9 +114,9 @@ form {
     }
 
     h1 {
-        font-size: 24px;
+       
         line-height: 10px;
-        color: $title;
+        
         letter-spacing: 1px;
     }
 
@@ -100,6 +124,13 @@ form {
         margin-top: 10%;
     }
 }
+
+.lineitem {
+    padding-top:  10px;
+    padding-bottom: 10px;
+
+}
+
 
 .name {
     justify-content: space-between;
@@ -138,7 +169,7 @@ form {
         margin: 3px 0;
         height: 30px;
         width: 40%;
-        color: #buttonlightpurple;
+        color: #cfc9e1;
         background-color: $buttonpurple;
         text-transform: uppercase;
         border: 0;
@@ -157,7 +188,7 @@ form {
         margin: 3px 0;
         height: 30px;
         width: 40%;
-        color: #buttonlightpurple;
+        color: #cfc9e1;
         background-color: $buttonpurple;
         text-transform: uppercase;
         border: 0;
@@ -169,15 +200,17 @@ form {
             animation-duration: 550ms;
             animation-fill-mode: forwards;
         }
-    }
+
+ } 
 
 @keyframes btn-hov {
     100% {
-        background-color: #buttonlightpurple;
+        background-color: #cfc9e1;
         color: $buttonpurple;
         transform: scale(1.05)
     }
 }
+
 
 input:focus,
 button:focus {
@@ -235,3 +268,32 @@ button:focus {
 .inv {
   display: none;
 }
+
+.resultscontent
+{
+
+background-color: #FFFFFF;
+border-color: $darkblue;
+border-width: 5px;
+padding: 20px;
+}
+
+a.resultlink:link
+{
+color: $oceanfog;
+font-family: "Arimo";
+text-decoration: none;
+}
+
+a.resultlink:hover
+{
+color: $marinegray;
+text-decoration: underline;
+}
+
+
+
+
+
+
+

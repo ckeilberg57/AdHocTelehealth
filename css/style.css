@@ -38,6 +38,23 @@ body {
 
 h1 {
   align-self: center;
+  font-size: 32px;
+  color: #4a3b76;
+}
+
+h2 {
+  color: #256c94;
+  font-family: "Arimo";
+}
+
+h3 {
+  color: #20416d;
+  font-family: "Arimo";
+}
+
+p {
+  color: #333333;
+  font-family: #Arimo;
 }
 
 form {
@@ -72,13 +89,16 @@ form label {
   font-weight: bold;
 }
 form h1 {
-  font-size: 24px;
   line-height: 10px;
-  color: #493b76;
   letter-spacing: 1px;
 }
 form h1:nth-of-type(2) {
   margin-top: 10%;
+}
+
+.lineitem {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .name {
@@ -115,7 +135,7 @@ form h1:nth-of-type(2) {
   margin: 3px 0;
   height: 30px;
   width: 40%;
-  color: #buttonlightpurple;
+  color: #cfc9e1;
   background-color: #4a3b76;
   text-transform: uppercase;
   border: 0;
@@ -132,7 +152,7 @@ form h1:nth-of-type(2) {
   margin: 3px 0;
   height: 30px;
   width: 40%;
-  color: #buttonlightpurple;
+  color: #cfc9e1;
   background-color: #4a3b76;
   text-transform: uppercase;
   border: 0;
@@ -147,7 +167,7 @@ form h1:nth-of-type(2) {
 
 @keyframes btn-hov {
   100% {
-    background-color: #buttonlightpurple;
+    background-color: #cfc9e1;
     color: #4a3b76;
     transform: scale(1.05);
   }
@@ -205,6 +225,24 @@ button:focus {
 }
 .inv {
   display: none;
+}
+
+.resultscontent {
+  background-color: #FFFFFF;
+  border-color: #20416d;
+  border-width: 5px;
+  padding: 20px;
+}
+
+a.resultlink:link {
+  color: #64afc5;
+  font-family: "Arimo";
+  text-decoration: none;
+}
+
+a.resultlink:hover {
+  color: #256c94;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
