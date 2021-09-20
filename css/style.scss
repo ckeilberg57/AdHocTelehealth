@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 $coral: #eb9478;
 $maroon: #8e2807;
 $lightblue: #81b4cc;
@@ -9,7 +10,12 @@ $seafoam: #9ccfbf;
 $darkblue: #20416d;
 $buttonpurple: #4a3b76;
 $buttonlightpurple: #cfc9e1;
+$buttonroyal: #4d7ede;
+$heavysmoke: #33383d;
+$moonfog: #728081;
+$riverghost: #b7c7d4;
 $title: #493b76;
+$blackflag: #22252a;
 
 body {
     display: flex;
@@ -21,9 +27,9 @@ body {
     width: 60%;
     display: flex;
     justify-content: center;
-    font-family: "Arimo";
-    background-color: $lightblue;
-    border-color: $darkblue;
+    font-family: "Montserrat";
+    background-color: $heavysmoke;
+    border-color: $blackflag;
     border-width: 2px;
     border-radius: 8px;
     -webkit-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
@@ -54,7 +60,7 @@ body {
 h1 {
     align-self: center;
     font-size: 32px;
-    font-family: "Ubuntu";
+    font-family: "Montserrat";
     color: $buttonpurple;
 }
 
@@ -92,7 +98,7 @@ form {
 
         width: 100%;
         min-height: 25px;
-        font-family:  "Arimo";
+        font-family:  "Montserrat";
         border-radius: 4px;
         color: $darkblue;
     }
@@ -104,9 +110,9 @@ form {
         border: 0;
         font-size: 1rem;
         letter-spacing: .10rem;
-        font-family: "Arimo";
+        font-family: "Montserrat";
         margin-top: 5px;
-        color: $darkblue;
+        color: $moonfog;
         border-radius: 4px;
     }
 
@@ -175,7 +181,7 @@ form {
         height: 30px;
         width: 40%;
         color: #cfc9e1;
-        background-color: $buttonpurple;
+        background-color: $buttonroyal;
         text-transform: uppercase;
         border: 0;
         border-radius: .3rem;
@@ -194,7 +200,7 @@ form {
         height: 30px;
         width: 40%;
         color: #cfc9e1;
-        background-color: $buttonpurple;
+        background-color: $buttonroyal;
         text-transform: uppercase;
         border: 0;
         border-radius: .3rem;
@@ -211,7 +217,7 @@ form {
 @keyframes btn-hov {
     100% {
         background-color: #cfc9e1;
-        color: $buttonpurple;
+        color: $buttonroyal;
         transform: scale(1.05)
     }
 }
