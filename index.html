@@ -24,7 +24,6 @@
 					<select name="sessionType" id="sessionType">
 						<option value="">- - - - -</option>
 						<option value="medconsult">Medical Consultation</option>
-						<option value="internalchat">Agent to Agent Discussion</option>
 					</select>
                 </div>
                 	<br>
@@ -54,7 +53,7 @@
                 <button id="submit" type="submit" onclick="return results();">Generate Session Info Now</button>
             </div>
         </div>
-        <div class="inv" id="internalchat">
+      <!--  <div class="inv" id="internalchat">
             <h2>
                 Instant Agent to Agent Conversation
             </h2>
@@ -66,7 +65,7 @@
                  <div class="btns"><br>
                 <button id="submit" type="button" onclick="agent2agent();">Create Agent to Agent Room</button>
             </div>
-            </div>
+            </div> -->
            </div>
            
         </form>
@@ -192,7 +191,7 @@ function results(){
 
     document.write('<html><head><title>Share Your Video Session</title><link rel="stylesheet" type="text/css" href="./css/style.css"></head><body>')
     document.write('<div class="wrapper"><div class="container"><h1>You Just Created a Rapid Consultation</h1>')
-    document.write('<div class="resultscontent"><h3>Patient Link (direct link)</h3><a class="resultlink" href="https://xmb-hc.pex-gcc.com/webapp/#/?conference=hcp' + randomAlias +'&name=' + patientLname + '%20' + patientID + '&pin=2021&callType=video" target="_blank">https://xmb-hc.pex-gcc.com/webapp/#/?conference=hcp' + randomAlias +'&name=' + patientLname + '%20' + patientID + '&pin=2021&callType=video</a><br></div><br><br>')
+    document.write('<div class="resultscontent"><h3>Patient Link (direct link)</h3><a class="resultlink" href="https://xmb-hc.pex-gcc.com/webapp/#/?conference=hcp' + randomAlias +'&name=' + patientLname + '%20' + patientID + '&callType=video&role=guest" target="_blank">https://xmb-hc.pex-gcc.com/webapp/#/?conference=hcp' + randomAlias +'&name=' + patientLname + '%20' + patientID + '&callType=video&role=guest</a><br></div><br><br>')
     document.write('<div class="resultscontent"><h3>Provider Connect Info</h3><p><a class="resultlink" href="https://kforney1205.github.io/pexRTCdemo/index.html" target="blank">https://kforney1205.github.io/pexRTCdemo/index.html</a><br><b>Session ID: </b> mp' + randomAlias + '<br><b>Provider PIN:</b> 2021</p></div></div></div>')
     document.write('</body></html>')
 
