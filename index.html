@@ -6,14 +6,37 @@
 </head>
 <body>
 
+<div class="form">
+      <div class="title">Instant Video Visit</div>
+      <div class="subtitle">Complete this Info and Enter Video Queue</div>
+     
+     <div class="input-container ic1">
+        <button class="actionbuttons" type="button" onclick="document.getElementById('randomAlias').value = getRndInteger(1001,999999)">Generate ID</button> 
+        <input type="text" id="randomAlias" name="randomAlias" maxlength="7" class="medOption" placeholder="generate a 1-time session ID"required>
+        <!-- <input name="sessionalias" id="videoID" class="input" type="text" placeholder=" " /> -->
+        <div class="cut"></div>
+        <label for="videoID" class="placeholder">Session ID</label>
+      </div>
 
+    <div class="input-container ic2">
+                <input type="text" id="patientLname" name="patientLname" maxlength="90" class="medOption" value="" placeholder="" required>
+                <div class="cut"></div>
+                <label>Patient Last Name</label><br>
+
+         </div>
+         <div class="input-container ic2">  
+                    <input type="text" id="patientID" name="patientID" maxlength="90" class="medOption" value="" placeholder="network ID number" required><br>
+                    <div class="cut"></div>
+                    <label>Patient ID</label>
+        </div>
+      <button id="submit" type="submit" onclick="return results();">Generate Link</button>
+    </div>
 
 
 
 <!-- FORM TEMPLATE --> 
 
-<div class="wrapper">
-    <div class="container">
+<!--     <div class="container">
         <form>
             <h1>
                 Create a New Video Session
@@ -52,7 +75,7 @@
              <div class="btns"><br>
                 <button id="submit" type="submit" onclick="return results();">Generate Session Info Now</button>
             </div>
-        </div>
+        </div> -->
       <!--  <div class="inv" id="internalchat">
             <h2>
                 Instant Agent to Agent Conversation
@@ -66,13 +89,13 @@
                 <button id="submit" type="button" onclick="agent2agent();">Create Agent to Agent Room</button>
             </div>
             </div> -->
-           </div>
+         <!--  </div>
            
         </form>
     </div>
 </div>
 
-<br><br>
+<br><br> -->
 
 <!-- <h1>Create a New Video Session</h1><br>
 	
@@ -190,7 +213,7 @@ function results(){
     var patientID = document.getElementById('patientID').value;
 
     document.write('<html><head><title>Start Your Video Session</title><link rel="stylesheet" type="text/css" href="./css/style.css"></head><body>')
-    document.write('<div class="wrapper"><div class="container"><h1>You Just Created a Rapid Consultation</h1>')
+    document.write('<div class="form"><div class="container"><h1>You Just Created a Rapid Consultation</h1>')
     document.write('<div class="resultscontent"><h3>Patient Link (direct link)</h3><a class="resultlink" href="https://xmb-hc.pex-gcc.com/webapp/#/?conference=hcp' + randomAlias +'&name=' + patientLname + '%20' + patientID + '&callType=video&role=host&pin=2021" target="_blank">Click Here to Start Video Call</a><br></div><br><br>')
     document.write('</body></html>')
 
@@ -209,7 +232,7 @@ function agent2agent(){
     var agentID = document.getElementById('agentID').value;
 
     document.write('<html><head><title>Share Your Video Session</title><link rel="stylesheet" type="text/css" href="./css/style.css"></head><body>')
-    document.write('<div class="wrapper"><div class="container"><h1>Rapid Agent to Agent Room is Created!</h1>')
+    document.write('<div class="form"><div class="container"><h1>Rapid Agent to Agent Room is Created!</h1>')
     document.write('<div class="resultscontent"><h3>Agent Direct Link (Text Message)</h3><a class="resultlink" href="https://xmb-hc.pex-gcc.com/webapp/#/?conference=hcp' + randomAlias + '&name=' + agentID + '&pin=2021&callType=video" target="_blank">https://xmb-hc.pex-gcc.com/webapp/#/?conference=hcp' + randomAlias + '&name=' + agentID +'&pin=2021&callType=video</a><br></div><br><br>')
     document.write('<div class="resultscontent"><h3>Agent Connect Info </h3><p><a class="resultlink" href="https://kforney1205.github.io/pexRTCdemo/index.html" target="blank">https://kforney1205.github.io/pexRTCdemo/index.html</a><br><b>Session ID: </b> mp' + randomAlias + '<br><b>Guest Agent PIN:</b> 2021<br><b>Host Agent PIN:</b>2021</p></div></div></div>')
     document.write('</body></html>')
