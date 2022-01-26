@@ -18,13 +18,13 @@
         <label for="videoID" class="placeholder">Session ID</label>
       </div>
 <br>
-    <div class="input-container ic2">
+    <div class="input-container ic1">
                 <input type="text" id="patientLname" name="patientLname" maxlength="90" class="input" value="" placeholder="" required>
                 <div class="cut"></div>
                 <label class="placeholder">Patient Last Name</label><br>
 
          </div>
-         <div class="input-container ic2">  
+         <div class="input-container ic1">  
                     <input type="text" id="patientID" name="patientID" maxlength="90" class="input" value="" placeholder="" required><br>
                     <div class="cut"></div>
                     <label class="placeholder">Patient ID</label>
@@ -214,7 +214,7 @@ function results(){
     document.write('<html><head><title>Start Your Video Session</title><link rel="stylesheet" type="text/css" href="css/style.css"></head><body>')
     document.write('<div class="form"><div class="title">You Just Created a Rapid Consultation')
     document.write('<div class="subtitle">Direct Link to Video Consult<br><br><a class="resultlink" href="https://xmb-hc.pex-gcc.com/webapp/#/?conference=hcp' + randomAlias +'&name=' + patientLname + '%20' + patientID + '&callType=video&role=host&pin=2021" target="_blank">Click Here to Start Video Call</a><br></div><br><br>')
-    document.write('</body></html>')
+    document.write('</body></html>') 
 
 }
 
