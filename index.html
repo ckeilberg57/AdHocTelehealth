@@ -11,8 +11,8 @@
       <div class="subtitle">Complete this Info and Enter Video Queue</div>
      
      <div class="input-container ic1">
-        <button class="actionbuttons" type="button" onclick="document.getElementById('randomAlias').value = getRndInteger(1001,999999)">Generate ID</button> <br>
-        <input type="text" id="randomAlias" name="randomAlias" maxlength="7" class="input" placeholder="generate a 1-time session ID"required>
+       <!-- <button class="actionbuttons" type="button" onclick="document.getElementById('randomAlias').value = getRndInteger(1001,999999)">Generate ID</button> <br> -->
+        <input type="text" id="randomAlias" name="randomAlias" maxlength="7" class="input" placeholder=" "required>
         <!-- <input name="sessionalias" id="videoID" class="input" type="text" placeholder=" " /> -->
         <div class="cut"></div>
         <label for="videoID" class="placeholder">Session ID</label>
@@ -21,13 +21,13 @@
     <div class="input-container ic2">
                 <input type="text" id="patientLname" name="patientLname" maxlength="90" class="input" value="" placeholder="" required>
                 <div class="cut"></div>
-                <label>Patient Last Name</label><br>
+                <label class="placeholder">Patient Last Name</label><br>
 
          </div>
          <div class="input-container ic2">  
-                    <input type="text" id="patientID" name="patientID" maxlength="90" class="input" value="" placeholder="network ID number" required><br>
+                    <input type="text" id="patientID" name="patientID" maxlength="90" class="input" value="" placeholder="" required><br>
                     <div class="cut"></div>
-                    <label>Patient ID</label>
+                    <label class="placeholder">Patient ID</label>
         </div>
       <button id="submit" class="submit" type="submit" onclick="return results();">Generate Link</button>
     </div>
@@ -69,7 +69,7 @@
             <div>
                 <div class="lineitem">
                    <label>Patient ID</label>
-					<input type="text" id="patientID" name="patientID" maxlength="90" class="medOption" value="" placeholder="network ID number" required><br>
+					<input type="text" id="patientID" name="patientID" maxlength="90" class="medOption" value="" placeholder="" required><br>
                 </div>
             </div>
              <div class="btns"><br>
@@ -213,7 +213,7 @@ function results(){
 
     document.write('<html><head><title>Start Your Video Session</title><link rel="stylesheet" type="text/css" href="css/style.css"></head><body>')
     document.write('<div class="form"><div class="title">You Just Created a Rapid Consultation')
-    document.write('<div class="subtitle">Direct Link to Video Consult<a class="resultlink" href="https://xmb-hc.pex-gcc.com/webapp/#/?conference=hcp' + randomAlias +'&name=' + patientLname + '%20' + patientID + '&callType=video&role=host&pin=2021" target="_blank">Click Here to Start Video Call</a><br></div><br><br>')
+    document.write('<div class="subtitle">Direct Link to Video Consult<br><br><a class="resultlink" href="https://xmb-hc.pex-gcc.com/webapp/#/?conference=hcp' + randomAlias +'&name=' + patientLname + '%20' + patientID + '&callType=video&role=host&pin=2021" target="_blank">Click Here to Start Video Call</a><br></div><br><br>')
     document.write('</body></html>')
 
 }
