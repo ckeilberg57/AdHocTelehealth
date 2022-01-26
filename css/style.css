@@ -148,10 +148,18 @@ body {
   background-color: #06b;
 }
 
-.resultlink a  {
+.resultlink:link  {
   font-family: Montserrat;
-  font-color: #69b1e6;
+  color: #69b1e6;
   text-decoration: none;
   font-size: 24px;
   font-weight: 500;
+}
+
+.resultlink:hover {
+  color: #affbda;
+}
+
+.pillow{
+  padding: 10px;
 }
