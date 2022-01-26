@@ -149,3 +149,10 @@ body {
 .actionbuttons:active {
   background-color: #06b;
 }
+
+.resultlink  {
+  font-family: Montserrat;
+  font-color: #08d;
+  text-decoration: none;
+
+}
